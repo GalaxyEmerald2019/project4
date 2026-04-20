@@ -1,122 +1,43 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 150%;
-    margin: 0;
-    background-color: #f3f5f7;
-    color: #1f2933;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-header {
-    background-color: #23415b;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Springtime In Michigan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-nav {
-    display: inline-block;
-    width: 80%;
-    background-color: #3a5f80;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-}
+<body>
+  <a class="skip-link" href="#main">Skip to Main Content</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
+        <li><a href="parks.html">Walks in the Park</a></li>
+      </ul>
+      <img src="https://raw.githubusercontent.com/academic-innovation-online-learning/WD4E-Intro_to_CSS3/main/CSS-week1-HW1/images/BaconGallupPark.jpg" alt="Brown Labradoodle sitting next to a statue.">
+    </nav>
+    <h1>Springtime in Michigan</h1>
+  </header>
+  <main id="main">
+    <p>Springtime in <a href="https://www.michigan.org/city/ann-arbor">Ann Arbor</a> is a beautiful time. Even though
+      it can be chilly at times, it is nice to walk my dog Bacon. This site includes some pictures I have taken on
+      these walks.</p>
 
-nav ul {
-    display: inline-block;
-    width: 85%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    vertical-align: middle;
-}
+    <p>Sometimes we walk around the neighborhood, other times we make it to the woods. Ann Arbor also has some
+      beautiful lakes and rivers including the <a
+        href="https://www.annarbor.org/things-to-do/recreation-outdoors/huron-river/">Huron River Watertrail</a> and
+      the <a href="https://www.a2gov.org/departments/Parks-Recreation/parks-places/argo/pages/default.aspx">Argo Park
+        Cascades</a>.</p>
+  </main>
+  <footer>
+    <p>This page was originally created by Colleen van Lent for the <a
+        href="https://www.coursera.org/specializations/web-design">Web Design for Everybody</a> Specialization.
+      Students are invited to make changes.</p>
+  </footer>
+</body>
 
-nav img {
-    width: 10%;
-    min-width: 50px;
-    vertical-align: middle;
-    border: 2px solid #ffffff;
-    border-radius: 0.25rem;
-}
+</html>
 
-main {
-    background-color: #ffffff;
-    padding: 1rem;
-}
-
-footer {
-    background-color: #23415b;
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
-}
-
-/* Homework 1 li styling kept here, but commented out for Homework 2 */
-/*
-li {
-    display: inline-block;
-    width: 30%;
-}
-*/
-
-h1 {
-    margin-top: 1rem;
-}
-
-p {
-    line-height: 1.6;
-}
-
-a {
-    color: #0b5ea8;
-}
-
-header a,
-footer a,
-nav a {
-    color: #ffffff;
-}
-
-.skip-link {
-    position: absolute;
-    left: -9999px;
-    top: 10px;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 0.5rem 0.75rem;
-    border: 2px solid #000000;
-    z-index: 1000;
-}
-
-.skip-link:focus {
-    left: 10px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: space-evenly;
-    align-items: start;
-    row-gap: 10px;
-}
-
-.grid img {
-    width: 100%;
-    border: 3px solid #8aa4bf;
-    padding: 0.25rem;
-    background-color: #ffffff;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-img {
-    border: 3px solid #8aa4bf;
-    padding: 0.25rem;
-    background-color: #ffffff;
-    box-sizing: border-box;
-}
